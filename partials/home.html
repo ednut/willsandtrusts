@@ -1,0 +1,61 @@
+<section class="banner-section clearfix">
+	<div class="circle"></div>
+	<div class="semi-circle"></div>
+	<div class="col-md-8 col-md-offset-2">
+		<div class="banner-content-wrap">
+			<div class="col-md-8 col-md-offset-2">
+				<h1 class="banner-caption">
+					The smartest way to make your will
+				</h1>
+				<div class="subtitle">
+					Make your legally binding will online in minutes for only ₦5,000. Tell us where you live to get started.
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="banner-action-wrap">
+				<a ng-click="goTo('signup')" class="active">I live in Lagos</a>
+				<a ng-click="goTo('elsewhere')"> I live elsewhere</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="our-selling-points">
+	<div class="container">
+		<div class="selling-point-wrap" ng-init="tab = 'tab1' ">
+			<div class="col-md-6">
+				<div class="img-caption" ng-if="tab === 'tab1'" style="background-image: url('images/tab-1.png');"></div>
+				<div class="img-caption" ng-if="tab === 'tab2'" style="background-image: url('images/tab-2.png');"></div>
+				<div class="img-caption" ng-if="tab === 'tab3'" style="background-image: url('images/tab-3.png');"></div>
+			</div>	
+			<div class="col-md-5 col-md-offset-1">
+				<div class="img-description">
+					<ul>
+						<li ng-click="tab = 'tab1' " ng-class="{active: tab === 'tab1' }">
+							<div class="description-wrap">
+								<div class="title">Takes less than 15 minutes</div>
+								<div class="caption">Our simple, interactive forms will have you done in 10-15 minutes (on average)</div>
+							</div>
+						</li>
+						<li ng-click="tab = 'tab2' " ng-class="{active: tab === 'tab2' }">
+							<div class="description-wrap">
+								<div class="title">Get help from an expert</div>
+								<div class="caption">Friendly specialists, here to help 7 days per week. Call us, or chat live now!</div>
+							</div>
+						</li>
+						<li ng-click="tab = 'tab3' " ng-class="{active: tab === 'tab3' }">
+							<div class="description-wrap">
+								<div class="title">Updatable anytime</div>
+								<div class="caption">Life changes, so our wills do too. Update your will anytime for just NGN5,000 per year.</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+
+
+
+

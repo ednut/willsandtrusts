@@ -1,0 +1,49 @@
+<style>
+	header#header, footer#footer{ display: none; } body{background-color: #F9F9F9;}
+</style>
+<section class="header">
+	<div class="container clearfix">
+		<div class="col-xs-6">
+			<div class="logo">
+				<a ui-sref="home">Wills & Trusts</a>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="progress-wrap">
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="widget-wrap">
+	<div class="container">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="title">
+				Unfortunately we’re not quite right for each other.
+			</div>
+			<div class="caption">
+				If you'd like to know when we're covering your country please enter your email address and the country below.
+			</div>
+			<div class="form-wrap">
+				<div class="form-field full">
+					<input type="email" placeholder="Email address"> 
+				</div>
+			</div>			
+			<div class="button-wrap clearfix">
+				<div class="col-md-6 text-left p-0">
+					<button class="back" ng-click="back()">
+						<i class="fa fa-angle-double-left" aria-hidden="true"></i>
+						Back
+					</button>
+				</div>
+				<div class="col-md-6 text-right p-0">
+					<button class="done" ng-click="goTo('home')">Done</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

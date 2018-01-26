@@ -1,0 +1,83 @@
+<style>header#header{display:none;}footer#footer{display:none;} body{background-color: #F9F9F9}</style>
+<header class="other-pages">
+    <div class="container">
+        <div class="col-md-3">
+            <ul class="logo-sec text-left">
+                <li><a ui-sref="home">Wills & Trusts</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <ul class="nav-sec text-right">
+                <li><a ng-class="{ current: isActive('/')}" ui-sref="#">Summary</a></li>
+                <li><a ng-class="{ current: isActive('/will')}" ui-sref="#">Edit people</a></li>
+                <li><a ng-class="{ current: isActive('/createTrust')}" ui-sref="#">Preferences</a></li>
+                <li><a ng-class="{ current: isActive('/login')}" ui-sref="#">Earn rewards</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="page-progress">
+    <span class="percentage" style="width: 25%;"></span>
+</div>
+
+<section class="basic">
+	<div class="container">
+		<div class="col-md-6">
+			<div class="about-yourself">
+                <div class="title">
+                    First, tell us a bit about yourself
+                </div>
+                <form action="">
+                    <div class="form-wrap">
+                        <label>Your first name</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-wrap">
+                        <label>Your last name</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="dob clearfix">
+                        <label>Your date of birth</label>
+                        <div class="quarter">
+                            <input type="text" placeholder="DD">
+                        </div>
+                        <div class="quarter">
+                            <input type="text" placeholder="MM">
+                        </div>
+                        <div class="quarter">
+                            <input type="text" placeholder="YYYY">
+                        </div>
+                    </div>
+                    <button ng-click="goTo('select-partner')">Save and Proceed</button>
+                </form>
+            </div>
+		</div>	
+		<div class="col-md-6">
+
+		</div>	
+	</div>
+</section>
+
+<footer class="other-pages" class="clearfix">
+    <div class="container">
+        <div class="col-md-6">
+            <div class="privacy text-left">
+                <ul>
+                	<li><a href="">Privacy</a></li>
+                	<li><a href="">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="links text-right">
+                <ul>
+                	<li><a href="">Contact</a></li>
+                	<li><a href="">Help</a></li>
+                	<li><a href="">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

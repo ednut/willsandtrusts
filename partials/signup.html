@@ -1,0 +1,72 @@
+<style>
+	header#header, footer#footer{ display: none; } body{background-color: #F9F9F9;}
+</style>
+
+<header class="other-pages">
+    <div class="container">
+        <div class="col-md-3">
+            <ul class="logo-sec text-left">
+                <li><a ng-class="{ current: isActive('/')}" ui-sref="/">Wills & Trusts</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <ul class="nav-sec text-right">
+                <li><a ng-class="{ current: isActive('/')}" ui-sref="#">Pricing</a></li>
+                <li><a ng-class="{ current: isActive('/will')}" ui-sref="#">How it works</a></li>
+                <li><a ng-class="{ current: isActive('/createTrust')}" ui-sref="#">Wills for couples</a></li>
+                <li><a ng-class="{ current: isActive('/login')}" ui-sref="login">Log in</a></li>
+                <li class="get-started"><a ui-sref="signup">Get started</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<section class="login">
+	<div class="container">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="title">Sign Up</div>
+			<form action="">
+				<div class="form-wrap">
+					<label for="">First Name</label>
+					<input type="text" placeholder="Your First Name">
+				</div>
+				<div class="form-wrap">
+					<label for="">Last Name</label>
+					<input type="text" placeholder="Your Last Name">
+				</div>
+				<div class="form-wrap">
+					<label for="">Email address</label>
+					<input type="email" placeholder="e.g. you@ecample.com">
+				</div>
+				<div class="form-wrap">
+					<label for="">Password</label>
+					<input type="password" placeholder="Type your password">
+				</div>
+				<button ng-click="goTo('state')">Sign up</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+<footer class="other-pages" class="clearfix">
+    <div class="container">
+        <div class="col-md-6">
+            <div class="privacy text-left">
+                <ul>
+                	<li><a href="">Privacy</a></li>
+                	<li><a href="">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="links text-right">
+                <ul>
+                	<li><a href="">Contact</a></li>
+                	<li><a href="">Help</a></li>
+                	<li><a href="">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

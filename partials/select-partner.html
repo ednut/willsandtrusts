@@ -1,0 +1,118 @@
+<style>header#header{display:none;}footer#footer{display:none;} body{background-color: #F9F9F9}</style>
+<header class="other-pages">
+    <div class="container">
+        <div class="col-md-3">
+            <ul class="logo-sec text-left">
+                <li><a ui-sref="home">Wills & Trusts</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <ul class="nav-sec text-right">
+                <li><a ng-class="{ current: isActive('/')}" ui-sref="#">Summary</a></li>
+                <li><a ng-class="{ current: isActive('/will')}" ui-sref="#">Edit people</a></li>
+                <li><a ng-class="{ current: isActive('/createTrust')}" ui-sref="#">Preferences</a></li>
+                <li><a ng-class="{ current: isActive('/login')}" ui-sref="#">Earn rewards</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="page-progress">
+    <span class="percentage" style="width: 50%;"></span>
+</div>
+
+<section class="basic">
+	<div class="container">
+		<div class="col-md-6">
+			<div class="about-yourself">
+                <div class="title">
+                    What is your marital status?
+                </div>
+                <form action="">
+                    <div class="select-box">
+                        <div class="form-field">
+                            <input type="radio" id="married" name="marital-state"> 
+                            <label for="married" ng-click="showOption = true">
+                                Married
+                            </label>
+                        </div>
+                        <div class="form-field">
+                            <input type="radio" id="engaged" name="marital-state"> 
+                            <label for="engaged" ng-click="showOption = true">
+                                Engaged
+                            </label>
+                        </div>
+                        <div class="form-field">
+                            <input type="radio" id="widow" name="marital-state"> 
+                            <label for="widow" ng-click="showOption = true">
+                                Widow/Widower
+                            </label>
+                        </div>
+                        <div class="form-field">
+                            <input type="radio" id="divorced" name="marital-state"> 
+                            <label for="divorced" ng-click="showOption = true">
+                                Divorced
+                            </label>
+                        </div>
+                        <div class="form-field">
+                            <input type="radio" id="single" name="marital-state"> 
+                            <label for="single" ng-click="showOption = true">
+                                Single
+                            </label>
+                        </div>
+                    </div>
+                    <div class="add-options" ng-if="showOption">
+                        <div class="option-title">Who is your partner?</div>
+                        <ul>
+                            <li>
+                                <span><i class="fa fa-plus" aria-hidden="true"></i> Click to add partner</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button-wrap clearfix">
+                        <div class="col-md-6 text-left p-0">
+                            <button class="back" ng-click="back()">
+                                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                Back
+                            </button>
+                        </div>
+                        <div class="col-md-6 text-right p-0">
+                            <button class="done" >Save and Proceed</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+		</div>	
+		<div class="col-md-6">
+            <div class="page-note">
+                <p>
+                    Please select your current legal status, even if you know it's going to change soon. You can always update this in the future.
+                </p>
+                <p>
+                    In a relationship but not married? You'll need to select 'Single'. (This is your legal marital status.)
+                </p>
+            </div>
+		</div>	
+	</div>
+</section>
+
+<footer class="other-pages" class="clearfix">
+    <div class="container">
+        <div class="col-md-6">
+            <div class="privacy text-left">
+                <ul>
+                	<li><a href="">Privacy</a></li>
+                	<li><a href="">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="links text-right">
+                <ul>
+                	<li><a href="">Contact</a></li>
+                	<li><a href="">Help</a></li>
+                	<li><a href="">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
