@@ -115,8 +115,8 @@ section.banner-section{
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 95% auto;
-    background-image: url('../../images/bg.png');
+    background-size: 70% auto;
+    background-image: url('../../images/_bg.png');
     overflow: hidden;
     .circle{
         width: 170px;
@@ -319,6 +319,139 @@ section.our-selling-points{
                     }
                 }
             }
+        }
+    }
+}
+
+section.experts{
+    background-color: #F9F9F9;
+    padding: 10em 0;
+    min-height: 20em;
+    .info-sec{
+        .title{
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #000;
+            font-weight: 600;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                display: block;
+                margin-bottom: 10px;
+                font-size: 16px;
+                i{
+                    display: inline-block;
+                    padding-right: 10px;
+                    color: #6E9ECF;
+                }
+            }
+        }
+        .button-sec{
+            margin-top: 20px;
+            button{
+                display: inline-block;
+                border: none;
+                color: #fff;
+                padding: 16px 40px;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                border-radius: 3px;
+                cursor: pointer;
+                text-decoration: none;
+                margin-top: 10px;
+                border-radius: 3px;
+                &.question{
+                    background-color: rgb(71, 113, 135);
+                }
+                &.number{
+                    background-color: transparent;
+                    color: #000;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .avata-sec{
+        position: relative;
+        .avata{
+            position: absolute;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            &.big{
+                width: 300px;
+                height: 300px;
+                left: 10em;
+            }
+            &.small{
+                width: 70px;
+                height: 70px;  
+                &.first{
+                    top: 4em;
+                    left: 3em;
+                }
+                &.second{
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+section.geography{
+    background-color: #fff;
+    padding: 6em 0;
+    min-height: 20em; 
+    .map-wrap{
+        overflow: hidden;
+        position: relative;
+        i{
+            color: #F0F0F0;
+            font-size: 35em;
+            display: inline-block;
+            margin-top: -50px;
+            text-shadow: 3px 3px 2px rgba(196, 196, 196, 1);
+        }
+        .marker{
+            display: block;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #477187;
+            color: #fff;
+            bottom: 10em;
+            left: 4em;
+            text-align: center;
+            padding-top: 4px;
+            padding-left: 1px;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            
+            i{
+                font-size: 14px;
+                color: #fff;
+                text-shadow: none;
+            }
+        }
+    }
+    .map-info{
+        .title{
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #000;
+            font-weight: 600;
+        }
+        .caption{
+            line-height: 1.5;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #495456;
         }
     }
 }
