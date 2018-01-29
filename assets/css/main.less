@@ -182,10 +182,10 @@ section.banner-section{
             height: 39em;
             img{
                 position: absolute;
-                width: 85em;
+                width: 45em;
                 height: auto;
-                left: -23em;
-                top: -17em;
+                left: -7em;
+                top: 0em;
             }
         }
     }
@@ -275,8 +275,31 @@ section.header{
 }
 
 section.our-selling-points{
-    padding: 10em 0;
+    padding: 8em 0;
     min-height: 20em;
+    .section-title-wrap{
+        text-align: center;
+        .section-title{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+            position: relative;
+            display: inline-block;
+            &:after{
+                content: "";
+                position: absolute;
+                width: 50%;
+                height: 3px;
+                background-color: #477187;
+                bottom: 0;
+                left: 50%;
+                margin-left: -90px;
+                top: 40px;
+            }
+        }
+    }
     .selling-point-wrap{
         .img-caption{
             position: relative;
@@ -297,35 +320,50 @@ section.our-selling-points{
                     cursor: pointer;
                     .description-wrap{
                         margin-bottom: 2em;
-                        .title{
-                            font-size: 24px;
+                        position: relative;
+                        span{
+                            display: inline-block;
+                            position: relative;
+                            float: left;
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            text-align: center;
+                            padding-top: 5px;
                             font-weight: 600;
-                            margin: 0;
-                            margin-bottom: 4px;
-                            color: #000;
-                            .caption{
-                                line-height: 1.5;
-                                font-size: 18px;
-                                margin-bottom: 10px;
+                            font-size: 17px;
+                            margin-top: 5px;
+                            background: #477187;
+                            color: #fff;
+                            text-shadow: 0px 1px 0px #AAA;
+                            &:before{
+                                content: '';
+                                position: absolute;
+                                width: 10px;
+                                height: 80px;
+                                background-color: #477187;
+                                top: 34px;
+                                left: 12px;
+                            }
+                            &.last{
+                               &:before{
+                                height: 30px;  
+                                } 
                             }
                         }
-                    }
-                    &:before{
-                        content: '';
-                        position: absolute;
-                        width: 5px;
-                        background-color: #efefef;
-                        left: -50px;
-                        height: 8em;
-                    }
-                    &.active{
-                        &:before{
-                            content: '';
-                            position: absolute;
-                            width: 5px;
-                            background-color: #6E9ECF;
-                            left: -50px;
-                            height: 8em;
+                        .title-wrap{
+                            margin-bottom: 4px;
+                            float: right;
+                            width: 80%;
+                            .title{
+                                font-size: 21px;
+                                font-weight: 600;
+                                margin: 0;
+                                color: #000;
+                            }
+                            .caption{
+
+                            }
                         }
                     }
                 }
