@@ -43,9 +43,11 @@
                         </div>
                         <div class="col-md-9 hidden-sm hidden-xs">
                             <ul class="nav-sec text-right">
+                                <li><a ng-class="{ current: isActive('/')}" ui-sref="#">Services</a></li>
                                 <li><a ng-class="{ current: isActive('/')}" ui-sref="#">Pricing</a></li>
                                 <li><a ng-class="{ current: isActive('/will')}" ui-sref="#">How it works</a></li>
                                 <li><a ng-class="{ current: isActive('/createTrust')}" ui-sref="#">Wills for couples</a></li>
+                                <li><a ng-class="{ current: isActive('/createTrust')}" ui-sref="#">Blog</a></li>
                                 <li><a ng-class="{ current: isActive('/login')}" ui-sref="login">Log in</a></li>
                                 <li class="get-started"><a ui-sref="signup">Get started</a></li>
                             </ul>
