@@ -297,6 +297,7 @@ section.our-selling-points{
                 left: 50%;
                 margin-left: -90px;
                 top: 40px;
+                display: none;
             }
         }
     }
@@ -451,56 +452,88 @@ section.experts{
     }
 }
 
-section.geography{
+section.testimony-wrapper{
     background-color: #fff;
     padding: 6em 0;
     min-height: 20em; 
-    .map-wrap{
-        overflow: hidden;
-        position: relative;
-        i{
-            color: #F0F0F0;
-            font-size: 35em;
-            display: inline-block;
-            margin-top: -50px;
-            text-shadow: 3px 3px 2px rgba(196, 196, 196, 1);
-        }
-        .marker{
-            display: block;
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background-color: #477187;
-            color: #fff;
-            bottom: 10em;
-            left: 4em;
+    .section-title-wrap{
+        text-align: center;
+        .section-title{
             text-align: center;
-            padding-top: 4px;
-            padding-left: 1px;
-            animation-duration: 3s;
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
-            
-            i{
-                font-size: 14px;
-                color: #fff;
-                text-shadow: none;
+            font-size: 26px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+            position: relative;
+            display: inline-block;
+        }
+    }
+    .testimony-wrapper{
+        margin-top: 30px;
+        .testimony-wrap{
+            position: relative;
+            position: relative;
+            min-height: 20em;
+            background: #f7f7f7;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+            .img-ball{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: auto;
+                margin-bottom: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover
+            }
+            .content{
+                .name{
+                    color: #477187;
+                    font-weight: 600;
+                    font-size: 17px;
+                }
+                .proffesion{
+                    color: #EA178C;
+                }
+                .words{
+                    margin-top: 10px;
+                }
             }
         }
     }
-    .map-info{
-        .title{
-            font-size: 40px;
-            margin-bottom: 20px;
-            color: #000;
+}
+
+section.clients{
+    background-color: #fff;
+    padding: 6em 0;
+    min-height: 20em; 
+    .section-title-wrap{
+        text-align: center;
+        .section-title{
+            text-align: center;
+            font-size: 26px;
             font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+            position: relative;
+            display: inline-block;
         }
-        .caption{
-            line-height: 1.5;
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #495456;
+    }
+    .swiper-container{
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 150px;
+                height: 100px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+            }
         }
     }
 }
