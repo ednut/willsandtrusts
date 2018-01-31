@@ -106,7 +106,7 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-			<div class="avata-sec">
+			<div class="avata-sec hidden-sm hidden-xs">
 				<span class="avata big" style="background-image: url('images/1.jpg');"></span>
 				<span class="avata small first" style="background-image: url('images/2.jpg');"></span>
 				<span class="avata small second" style="background-image: url('images/3.jpg');"></span>
@@ -177,5 +177,116 @@
 	</div>
 </section>
 
+<section class="pricing">
+	<div class="container">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="title">Save hundreds compared to a lawyer</div>
+			<div class="caption">We use smart technology to save our customers hundreds of pounds - with real support from humans to make sure we do it right.</div>
+			<div class="radio-button-wrap clearfix" ng-init="tab = 'tab1'">
+				<div class="rad-btn" ng-click="tab = 'tab1'">
+					<div class="d_button" ng-class="{active : tab === 'tab1'}"></div>
+					<div class="text" ng-class="{active : tab === 'tab1'}">Wills for Individuals</div>
+				</div>
+				<div class="rad-btn" ng-click="tab = 'tab2'">
+					<div class="d_button" ng-class="{active : tab === 'tab2'}"></div>
+					<div class="text" ng-class="{active : tab === 'tab2'}">Wills for Couples</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="price-card-wrap" ng-if="tab === 'tab1'">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-6">
+					<div class="price-card carrot">
+						<div class="p-20-30">
+							<div class="choice">Carrot</div>
+							<div class="one-time">ONE TIME FEE</div>
+							<div class="price">₦10,000</div>
+							<ul class="selling-point">
+								<li>Comprehensive legal will</li>
+								<li>Checked by experts</li>
+								<li>Live support</li>
+								<li>Takes 15 minutes</li>
+							</ul>
+							<div class="extra clearfix">
+								<ul>
+									<li>Unlimited updates</li>
+									<li>Updates to the law</li>
+								</ul>
+								<div class="extra-price">
+									<div class="amount">₦3,000</div>
+									<div class="amount-caption">PER YEAR</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="getting-started">Get Started</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="price-card p-20-30">
+						<div class="choice">Typical Lawyer</div>
+						<div class="one-time">ONE TIME FEE</div>
+						<div class="price">₦30,000 - ₦50,000</div>
+						<ul class="selling-point">
+							<li>Comprehensive legal will</li>
+							<li>Checked by experts</li>
+							<li class="slash">Live support</li>
+							<li class="slash">Takes 15 minutes</li>
+							<li class="slash">Unlimited updates</li>
+							<li class="slash">Updates to the law</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="price-card-wrap" ng-if="tab === 'tab2'">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-6">
+					<div class="price-card carrot">
+						<div class="p-20-30">
+							<div class="choice">Carrot</div>
+							<div class="one-time">ONE TIME FEE</div>
+							<div class="price">₦8,000</div>
+							<ul class="selling-point">
+								<li>Comprehensive legal will</li>
+								<li>Checked by experts</li>
+								<li>Live support</li>
+								<li>Takes 15 minutes</li>
+							</ul>
+							<div class="extra clearfix">
+								<ul>
+									<li>Unlimited updates</li>
+									<li>Updates to the law</li>
+								</ul>
+								<div class="extra-price">
+									<div class="amount">₦3,000</div>
+									<div class="amount-caption">EACH PER YEAR</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="getting-started">Get Started</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="price-card p-20-30">
+						<div class="choice">Typical Lawyer</div>
+						<div class="one-time">ONE TIME FEE</div>
+						<div class="price">₦60,000 - ₦100,000</div>
+						<ul class="selling-point">
+							<li>Comprehensive legal will</li>
+							<li>Checked by experts</li>
+							<li class="slash">Live support</li>
+							<li class="slash">Takes 15 minutes</li>
+							<li class="slash">Unlimited updates</li>
+							<li class="slash">Updates to the law</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
 
 
