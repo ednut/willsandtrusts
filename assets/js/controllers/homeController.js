@@ -19,13 +19,16 @@ app.controller('generalController', function($scope, $location, $window, $state)
     $scope.child = 0;
 
     $scope.addChild = function(){
-    	if($scope.child >= 0){
     		$scope.child = $scope.child + 1
-    	}
     }
 
     $scope.substractChild = function(){
-    	$scope.child = $scope.child - 1
+        if($scope.child <= 0){
+            alert("Opps... we cannot have negative number!");
+            $scope.child = 0;
+        }else{
+            $scope.child = $scope.child - 1
+        }
     }
 
 
