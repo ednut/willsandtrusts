@@ -17,7 +17,7 @@
     </div>
 </header>
 <div class="page-progress">
-    <span class="percentage" style="width: 50%;"></span>
+    <span class="percentage" style="width: 100%;"></span>
 </div>
 
 <section class="basic">
@@ -25,38 +25,20 @@
 		<div class="col-md-6">
 			<div class="about-yourself">
                 <div class="title">
-                    What is your marital status?
+                    Do you have any children?
                 </div>
                 <form action="">
                     <div class="select-box">
                         <div class="form-field">
-                            <input type="radio" id="married" name="marital-state"> 
-                            <label for="married" ng-click="showOption = true">
-                                Married
+                            <input type="radio" id="yes" name="children"> 
+                            <label for="yes" ng-click="showOption = true">
+                                Yes
                             </label>
                         </div>
                         <div class="form-field">
-                            <input type="radio" id="engaged" name="marital-state"> 
-                            <label for="engaged" ng-click="showOption = true">
-                                Engaged
-                            </label>
-                        </div>
-                        <div class="form-field">
-                            <input type="radio" id="widow" name="marital-state"> 
-                            <label for="widow" ng-click="showOption = true">
-                                Widow/Widower
-                            </label>
-                        </div>
-                        <div class="form-field">
-                            <input type="radio" id="divorced" name="marital-state"> 
-                            <label for="divorced" ng-click="showOption = true">
-                                Divorced
-                            </label>
-                        </div>
-                        <div class="form-field">
-                            <input type="radio" id="single" name="marital-state"> 
-                            <label for="single" ng-click="showOption = true">
-                                Single
+                            <input type="radio" id="no" name="children"> 
+                            <label for="no" ng-click="showOption = false">
+                                No
                             </label>
                         </div>
                     </div>
@@ -74,10 +56,9 @@
                         </ul>
                     </div>
                     <div class="add-options" ng-if="showOption">
-                        <div class="option-title">Who is your partner?</div>
                         <ul>
                             <li>
-                                <span data-toggle="modal" data-target=".page-modal"><i class="fa fa-plus" aria-hidden="true"></i> Click to add partner</span>
+                                <span data-toggle="modal" data-target=".page-modal"><i class="fa fa-plus" aria-hidden="true"></i> Add your first child</span>
                             </li>
                         </ul>
                     </div>
@@ -89,7 +70,7 @@
                             </button>
                         </div>
                         <div class="col-md-6 text-right p-0">
-                            <button class="done" ng-click="goTo('select-children')">Save and Proceed</button>
+                            <button class="done" ng-click="goTo('summary')" >Save and Proceed</button>
                         </div>
                     </div>
                 </form>
@@ -98,10 +79,10 @@
 		<div class="col-md-6">
             <div class="page-note">
                 <p>
-                    Please select your current legal status, even if you know it's going to change soon. You can always update this in the future.
+                    If your first child is on the way, select 'No' for now. Once they're born you can come back and update this.
                 </p>
                 <p>
-                    In a relationship but not married? You'll need to select 'Single'. (This is your legal marital status.)
+                    Step children should not be added here. You can add them later if you wish to leave them part of your estate.
                 </p>
             </div>
 		</div>	
@@ -134,24 +115,23 @@
   <div class="modal-dialog modal-md page-modal-wrap" role="document">
     <div class="modal-content page-modal">
         <div class="header-section clearfix">
-            <span class="text">Add a new contact</span>
+            <span class="text">Add a new child</span>
             <span class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE14C;</i></span>
         </div>
         <div class="content-section">
             <form action="">
                 <div class="form-wrap">
-                    <label for="">Contact's full name</label>
-                    <input type="email" placeholder="Contact's full name">
-                </div>
-                <div class="form-wrap">
-                    <label for="">Contact's email address</label>
-                    <input type="email" placeholder="Contact's email address">
+                    <label for="">Your child's full name</label>
+                    <input type="email" placeholder="Your child's full name">
                 </div>
                 <div class="form-wrap">
                     <label for="">Your contact's date of birth</label>
                     <input type="email" placeholder="Your contact's date of birth">
                 </div>
-                <button data-dismiss="modal" ng-click="showAdditon = true" aria-label="Close">Save Contact</button>
+                <div class="note">
+                    If your child has a disability or needs guardianship after the age of 18, we recommend you seek specialist advice.
+                </div>
+                <button data-dismiss="modal" ng-click="showAdditon = true" aria-label="Close">Save Child</button>
             </form>
         </div>
     </div>

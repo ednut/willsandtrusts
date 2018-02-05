@@ -65,6 +65,11 @@
 	      templateUrl: "partials/select-partner.html"
 	    })
 
+	    .state('select-children', {
+	      url: "/about-yourself/select-children",
+	      templateUrl: "partials/select-children.html"
+	    })
+
 	    .state('error', {
 	      url: "/error",
 	      templateUrl: "404.html"
