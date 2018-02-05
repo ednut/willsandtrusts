@@ -300,7 +300,7 @@ section.header{
 }
 
 section.our-selling-points{
-    padding: 8em 0;
+    padding: 5em 0;
     min-height: 20em;
 
     .selling-point-wrap{
@@ -313,7 +313,8 @@ section.our-selling-points{
             width: 100%;
         }
         .img-description{
-            margin-top: 2em;
+            margin-top: 5em;
+            position: relative;
             ul{
                 margin: 0;
                 padding: 0;
@@ -369,6 +370,88 @@ section.our-selling-points{
                             }
                         }
                     }
+                }
+            }
+            .mb-120{
+                margin-bottom: 120px;
+            }
+            .hex-wrap{
+                position: relative;
+                .hexagon {
+                    width: 120px;
+                    height: 75px;
+                    position: relative;
+                    text-align: center;
+                    color: #fff;
+                    font-family: 'Abril Fatface',cursive;
+                    font-size: 27px;
+                    padding-top: 16px;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: -25px;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border-left: 60px solid transparent;
+                        border-right: 60px solid transparent;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: -25px;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border-left: 60px solid transparent;
+                        border-right: 60px solid transparent;
+                    }
+                    &.first{
+                        background: #94B0A2;
+                        color: #fff;
+                        &:before{
+                            border-bottom: 25px solid #94B0A2;
+                        }
+                        &:after{
+                            border-top: 25px solid #94B0A2;
+                        }
+                    }
+                    &.second{
+                        background: #181818;
+                        &:before{
+                            border-bottom: 25px solid #181818;
+                        }
+                        &:after{
+                            border-top: 25px solid #181818;
+                        }
+                    }
+                    &.third{
+                        background: #A97D4E;
+                        &:before{
+                            border-bottom: 25px solid #A97D4E;
+                        }
+                        &:after{
+                            border-top: 25px solid #A97D4E;
+                        }
+                    }
+                    &.forth{
+                        background: #BFBFBF;
+                        &:before{
+                            border-bottom: 25px solid #BFBFBF;
+                        }
+                        &:after{
+                            border-top: 25px solid #BFBFBF;
+                        }
+                    }
+                }
+                .caption{
+                    position: absolute;
+                    font-size: 15px;
+                    font-weight: 600;
+                    top: 105px;
+                    left: -1em;
+                    right: 3em;
+                    text-align: center;
                 }
             }
         }
