@@ -17,7 +17,7 @@
     </div>
 </header>
 <div class="page-progress">
-    <span class="percentage" style="width: 100%;"></span>
+    <span class="percentage" style="width: 50%;"></span>
 </div>
 
 <section class="basic">
@@ -25,24 +25,10 @@
 		<div class="col-md-6">
 			<div class="about-yourself">
                 <div class="title">
-                    Do you have any children?
+                    Who would you like to inherit your estate?
                 </div>
                 <form action="">
-                    <div class="select-box">
-                        <div class="form-field">
-                            <input type="radio" id="yes" name="children"> 
-                            <label for="yes" ng-click="showOption = true">
-                                Yes
-                            </label>
-                        </div>
-                        <div class="form-field">
-                            <input type="radio" id="no" name="children"> 
-                            <label for="no" ng-click="showOption = false">
-                                No
-                            </label>
-                        </div>
-                    </div>
-                    <div class="added-options" ng-if="showAdditon">
+                    <div class="added-options">
                         <ul>
                             <li data-toggle="modal" data-target=".page-modal">
                                 <div class="summery-wrap">
@@ -50,15 +36,15 @@
                                     <div class="date">23/09/1987</div>
                                 </div>
                                 <div class="edit">
-                                    Edit
+                                    <i class="material-icons">&#xE147;</i>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="add-options" ng-if="showOption">
+                    <div class="add-options">
                         <ul>
                             <li>
-                                <span data-toggle="modal" data-target=".page-modal"><i class="fa fa-plus" aria-hidden="true"></i> Add your first child</span>
+                                <span data-toggle="modal" data-target=".page-modal"><i class="fa fa-plus" aria-hidden="true"></i> Add another beneficiary </span>
                             </li>
                         </ul>
                     </div>
@@ -70,7 +56,7 @@
                             </button>
                         </div>
                         <div class="col-md-6 text-right p-0">
-                            <button class="done" ng-click="goTo('summary'); estate();" >Save and Proceed</button>
+                            <button class="done">Save and Proceed</button>
                         </div>
                     </div>
                 </form>
@@ -79,10 +65,7 @@
 		<div class="col-md-6">
             <div class="page-note">
                 <p>
-                    If your first child is on the way, select 'No' for now. Once they're born you can come back and update this.
-                </p>
-                <p>
-                    Step children should not be added here. You can add them later if you wish to leave them part of your estate.
+                    In the next steps you'll choose specific percentage splits and what should happen if any of these people die before you.
                 </p>
             </div>
 		</div>	
@@ -115,23 +98,24 @@
   <div class="modal-dialog modal-md page-modal-wrap" role="document">
     <div class="modal-content page-modal">
         <div class="header-section clearfix">
-            <span class="text">Add a new child</span>
+            <span class="text">Add a new contact</span>
             <span class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE14C;</i></span>
         </div>
         <div class="content-section">
             <form action="">
                 <div class="form-wrap">
-                    <label for="">Your child's full name</label>
-                    <input type="email" placeholder="Your child's full name">
+                    <label for="">Contact's full name</label>
+                    <input type="email" placeholder="Contact's full name">
+                </div>
+                <div class="form-wrap">
+                    <label for="">Contact's email address</label>
+                    <input type="email" placeholder="Contact's email address">
                 </div>
                 <div class="form-wrap">
                     <label for="">Your contact's date of birth</label>
                     <input type="email" placeholder="Your contact's date of birth">
                 </div>
-                <div class="note">
-                    If your child has a disability or needs guardianship after the age of 18, we recommend you seek specialist advice.
-                </div>
-                <button data-dismiss="modal" ng-click="showAdditon = true" aria-label="Close">Save Child</button>
+                <button data-dismiss="modal" ng-click="showAdditon = true" aria-label="Close">Save Contact</button>
             </form>
         </div>
     </div>

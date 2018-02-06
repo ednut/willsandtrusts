@@ -945,6 +945,14 @@ section.summery-wrap{
             margin: 0;
             margin-bottom: 30px;
             opacity: .5;
+            position: relative;
+            i.done{
+                position: absolute;
+                color: #4CAF50;
+                top: 20px;
+                right: 20px;
+                font-size: 35px;
+            }
             &.active{
                 background: #fff;
                 opacity: 1;
@@ -1099,7 +1107,10 @@ section.summery-wrap{
                 color: #6e9ecf;
                 font-weight: 600;
                 line-height: 45px;
-
+                i{
+                    color: #F9F9F9;
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -1114,6 +1125,28 @@ section.basic{
             font-weight: 500;
             margin-bottom: 20px;
             color: #000;
+        }
+        p{
+            margin-bottom: 20px;
+            color: #495456;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+        button.next{
+            float: left;
+            margin-top: 2em;
+            border: 0;
+            color: #fff;
+            padding: 16px 40px;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            border-radius: 3px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            background-color: rgb(71, 113, 135);
+            transition: background-color .1s ease-in;
         }
         form{
             .form-wrap{
@@ -1254,11 +1287,36 @@ section.basic{
     .page-note{
         padding-right: 0;
         padding-left: 20px; 
+        margin-bottom: 20px;
         p{
             margin-bottom: 20px;
             color: #495456;
             line-height: 1.5;
             font-size: 18px;
+        }
+        .list-title{
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        ul{
+            li{
+                display: block;
+                position: relative;
+                font-size: 16px;
+                padding-bottom: 10px;
+                &:before{
+                    content: '\E061';
+                    font-family: 'Material Icons';
+                    left: -16px;
+                    position: absolute;
+                    top: 3px;
+                    color: #477187;
+                    font-size: 13px;
+                }
+            }
         }
     }
 }

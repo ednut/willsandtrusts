@@ -1,6 +1,4 @@
-	angular.module('myApp.controllers', []);
-	angular.module('myApp.models', []);
-	var myApp = angular.module('myApp', ['ui.router', 'myApp.controllers', 'myApp.models']);
+var myApp = angular.module('myApp', ['ui.router']);
 
 	// configure our routes
 	myApp.config(function($stateProvider, $urlRouterProvider) {
@@ -70,9 +68,14 @@
 	      templateUrl: "partials/select-children.html"
 	    })
 
-	    .state('error', {
-	      url: "/error",
-	      templateUrl: "404.html"
+	    .state('estate-intro', {
+	      url: "/estate-introduction",
+	      templateUrl: "partials/estate.html"
+	    })
+
+	    .state('estate-people', {
+	      url: "/estate/people",
+	      templateUrl: "partials/estate-people.html"
 	    })
 
 	});

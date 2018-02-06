@@ -1,0 +1,87 @@
+<style>header#header{display:none;}footer#footer{display:none;} body{background-color: #F9F9F9}</style>
+<header class="other-pages">
+    <div class="container">
+        <div class="col-md-3">
+            <ul class="logo-sec text-left">
+                <li><a ui-sref="home">Wills & Trusts</a></li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <ul class="nav-sec text-right">
+                <li><a ng-class="{ current: isActive('/')}" ui-sref="#">Summary</a></li>
+                <li><a ng-class="{ current: isActive('/will')}" ui-sref="#">Edit people</a></li>
+                <li><a ng-class="{ current: isActive('/createTrust')}" ui-sref="#">Preferences</a></li>
+                <li><a ng-class="{ current: isActive('/login')}" ui-sref="#">Earn rewards</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="page-progress">
+    <span class="percentage" style="width: 25%;"></span>
+</div>
+
+<section class="basic">
+    <div class="container">
+        <div class="col-md-6">
+            <div class="about-yourself">
+                <div class="title">
+                    First, tell us a bit about yourself
+                </div>
+
+                <p>
+                    Your estate is everything you own apart from any specific gifts you decide to leave to people later on.
+                </p>
+
+                <button ng-click="goTo('estate-people')" class="next">Next</button>
+                
+            </div>
+        </div>  
+        <div class="col-md-6">
+            <div class="page-note">
+                <div class="list-title">What it includes</div>
+                <ul>
+                    <li>Your bank accounts and ISAs</li>
+                    <li>Property (your house or flat)</li>
+                    <li>Stocks & Shares</li>
+                    <li>Your possessions</li>
+                </ul>
+            </div>
+            <div class="page-note">
+                <div class="list-title">What it doesn't include</div>
+                <ul>
+                    <li>Most pension plans</li>
+                    <li>Most life insurance</li>
+                    <li>Specific gifts you choose to leave</li>
+                </ul>
+            </div>
+            <div class="page-note">
+                <div class="list-title">Who can I leave it with?</div>
+                <p>
+                    You can leave your estate to whoever you'd like. You can even include charities.
+                </p>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<footer class="other-pages" class="clearfix">
+    <div class="container">
+        <div class="col-md-6">
+            <div class="privacy text-left">
+                <ul>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="links text-right">
+                <ul>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
